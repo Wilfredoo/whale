@@ -1,19 +1,23 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import Intro from "./components/Intro.js";
+import Auth from "./components/Auth.js";
 import Register from "./components/Register.js";
 import Login from "./components/Login.js";
+import Loading from "./components/Loading.js";
+import Main from "./components/Main.js";
 import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 
 const AppNavigator = createStackNavigator(
     {
-        Intro: Intro,
+        Auth: Auth,
         Login: Login,
-        Register: Register
+        Register: Register,
+        Loading: Loading,
+        Main:Main
     },
     {
-        initialRouteName: "Intro"
+        initialRouteName: "Loading"
     }
 );
 
@@ -31,3 +35,7 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     }
 });
+
+
+
+

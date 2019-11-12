@@ -1,5 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import firebase from 'firebase'
+import { firebaseConfig } from "../config";
+firebase.initializeApp(firebaseConfig)
 
 export default function Register() {
     return (
